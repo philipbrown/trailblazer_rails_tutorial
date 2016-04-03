@@ -5,7 +5,6 @@ gem "sqlite3"
 
 # Trailblazer
 gem "trailblazer-rails"
-gem "trailblazer-loader"
 gem "reform", "~> 2.1.0"
 gem "cells-slim"
 

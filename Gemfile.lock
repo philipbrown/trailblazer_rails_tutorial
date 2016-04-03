@@ -141,7 +141,6 @@ DEPENDENCIES
   reform (~> 2.1.0)
   spring
   sqlite3
-  trailblazer-loader
   trailblazer-rails
 
 BUNDLED WITH

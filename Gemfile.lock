@@ -37,6 +37,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    bcrypt (3.1.10)
     builder (3.2.2)
     byebug (8.2.2)
     cells (4.0.4)
@@ -130,11 +131,15 @@ GEM
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
+    valid_email (0.0.13)
+      activemodel
+      mail (~> 2.6.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   byebug
   cells-slim
   rails (= 4.2.5)
@@ -142,6 +147,7 @@ DEPENDENCIES
   spring
   sqlite3
   trailblazer-rails
+  valid_email
 
 BUNDLED WITH
    1.10.4

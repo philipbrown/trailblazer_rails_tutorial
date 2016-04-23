@@ -25,6 +25,13 @@ class UserCreateTest < ActiveSupport::TestCase
     assert_includes(op.errors[:email], "has already been taken")
   end
 
+  test "password should be greater than 8 characters" do
+    res, op = User::Create.run(user: {password: "qwerty"})
+
+    assert_not(res)
+    assert_includes(op.errors[:password], "is too short (minimum is 8 characters)")
+  end
+
   test "create user" do
     res, op = User::Create.run(user: {email: "name@domain.com", password: "password"})
 

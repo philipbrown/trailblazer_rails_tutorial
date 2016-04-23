@@ -1,0 +1,15 @@
+h1 Register
+- if @form.errors.any?
+  ul
+  - @form.errors.full_messages.each do |msg|
+    li = msg
+
+= form_for @form, url: register_url do |f|
+  div
+    = f.label :email
+    = f.text_field :email
+  div
+    = f.label :password
+    = f.password_field :password
+  div
+    = f.submit "Register"
